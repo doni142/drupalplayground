@@ -1,0 +1,5 @@
+name: Hello World
+type: module
+core_version_requirement: ^10
+description: this is a test module
+configure: helloworld.config

@@ -1,0 +1,17 @@
+<?php
+
+use League\CommonMark\Extension\InlinesOnly\ChildRenderer;
+
+function helloworld_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  $form['actions']['submit']['#value'] = t('Search');
+}
+
+function helloworld_theme($existing,  $type, $theme, $path)
+{
+  return ['helloworld_world' =>
+  [
+    'variables' => ['value' => ''],
+    'render element' => 'children',
+  ]];
+}

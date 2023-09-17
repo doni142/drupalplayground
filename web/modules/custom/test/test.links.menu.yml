@@ -1,0 +1,5 @@
+helloworld.config:
+  title: 'Helloworld Settings'
+  route_name: 'helloworld.config'
+  description: 'You can set up helloworld module here.'
+  parent: 'system.admin_config_media'

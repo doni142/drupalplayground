@@ -1,0 +1,14 @@
+helloworld.hello: 
+  path: '/helloworld'
+  defaults: 
+    _controller: '\Drupal\helloworld\Controller\HelloController::hello'
+  requirements:
+    _permission: 'access content'
+
+helloworld.config:
+  path: '/admin/config/media/helloworld'
+  defaults:
+    _form: '\Drupal\helloworld\Form\HelloConfigForm'
+    _title: 'Helloworld Configuration'
+  requirements:
+    _permission: 'administer site configuration'
