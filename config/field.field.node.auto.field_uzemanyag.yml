@@ -1,0 +1,39 @@
+uuid: a60f1eda-fdb7-4f91-aab0-1be3fa2c1524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uzemanyag
+    - node.type.auto
+    - taxonomy.vocabulary.uzemanyag
+  content:
+    - 'taxonomy_term:uzemanyag:4063afdf-fcc9-4bbd-9224-a7d9d3c2405c'
+    - 'taxonomy_term:uzemanyag:912f4994-97dd-49b3-8213-6e8433864d8e'
+    - 'taxonomy_term:uzemanyag:f9390273-c345-42e7-a593-467ff3eb2278'
+id: node.auto.field_uzemanyag
+field_name: field_uzemanyag
+entity_type: node
+bundle: auto
+label: Üzemanyag
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 912f4994-97dd-49b3-8213-6e8433864d8e
+  -
+    target_uuid: f9390273-c345-42e7-a593-467ff3eb2278
+  -
+    target_uuid: 4063afdf-fcc9-4bbd-9224-a7d9d3c2405c
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      uzemanyag: uzemanyag
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

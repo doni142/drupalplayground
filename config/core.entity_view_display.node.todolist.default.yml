@@ -1,0 +1,28 @@
+uuid: ee73fd3e-c4fb-498d-a9b0-e138103179be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.todolist.field_alternate_todo_title
+    - node.type.todolist
+  module:
+    - user
+id: node.todolist.default
+targetEntityType: node
+bundle: todolist
+mode: default
+content:
+  field_alternate_todo_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

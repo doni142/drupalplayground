@@ -1,0 +1,33 @@
+uuid: 0989c4e1-30b1-4948-83a1-50bfcd8d3830
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.books_of_authors_of_books
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__books_of_authors_of_books_block_1
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:books_of_authors_of_books-block_1'
+settings:
+  id: 'views_block:books_of_authors_of_books-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      book: book

@@ -1,0 +1,29 @@
+uuid: fc1f488c-5ec3-4d52-95b4-e8376b889e99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cipoanyag
+    - node.type.focicipo
+    - taxonomy.vocabulary.cipoanyag
+id: node.focicipo.field_cipoanyag
+field_name: field_cipoanyag
+entity_type: node
+bundle: focicipo
+label: Cipőanyag
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cipoanyag: cipoanyag
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

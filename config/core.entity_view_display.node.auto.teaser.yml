@@ -1,0 +1,36 @@
+uuid: 967510fe-8b8f-496a-9ac4-8c0efdaab460
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.auto.body
+    - field.field.node.auto.field_extrak
+    - field.field.node.auto.field_marka_es_modell
+    - field.field.node.auto.field_uzemanyag
+    - node.type.auto
+  module:
+    - text
+    - user
+id: node.auto.teaser
+targetEntityType: node
+bundle: auto
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_extrak: true
+  field_marka_es_modell: true
+  field_uzemanyag: true

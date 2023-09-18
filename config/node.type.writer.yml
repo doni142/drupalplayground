@@ -1,0 +1,18 @@
+uuid: b53fd91e-d784-4868-bed6-abab5b61c470
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Writer
+type: writer
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

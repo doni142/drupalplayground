@@ -1,0 +1,19 @@
+uuid: 9fc4a648-1a34-4e3d-b07d-f429382167cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shoppingdescribtion
+    - node.type.shoppinglist
+id: node.shoppinglist.field_shoppingdescribtion
+field_name: field_shoppingdescribtion
+entity_type: node
+bundle: shoppinglist
+label: ShoppingDescribtion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

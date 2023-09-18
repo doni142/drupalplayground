@@ -1,0 +1,19 @@
+uuid: f4652613-f04c-48c6-a0b8-7d22f31ff1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternate_title
+    - node.type.todo
+id: node.todo.field_alternate_title
+field_name: field_alternate_title
+entity_type: node
+bundle: todo
+label: 'Alternate Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

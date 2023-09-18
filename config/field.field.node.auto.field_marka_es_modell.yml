@@ -1,0 +1,29 @@
+uuid: c4a5ef5c-2a95-4ff7-84b8-0a447a3d2ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marka_es_modell
+    - node.type.auto
+    - taxonomy.vocabulary.marka_es_modell
+id: node.auto.field_marka_es_modell
+field_name: field_marka_es_modell
+entity_type: node
+bundle: auto
+label: 'Márka és Modell'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      marka_es_modell: marka_es_modell
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

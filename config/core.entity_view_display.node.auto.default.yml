@@ -1,0 +1,55 @@
+uuid: eccadd80-2d34-4f50-bd18-7bf03eb252b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.auto.body
+    - field.field.node.auto.field_extrak
+    - field.field.node.auto.field_marka_es_modell
+    - field.field.node.auto.field_uzemanyag
+    - node.type.auto
+  module:
+    - options
+    - text
+    - user
+id: node.auto.default
+targetEntityType: node
+bundle: auto
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_extrak:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_marka_es_modell:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_uzemanyag:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

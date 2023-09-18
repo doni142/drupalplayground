@@ -1,0 +1,29 @@
+uuid: c33380ea-1a7f-4654-b03f-360d5f21fce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_focicipo_marka_modell
+    - node.type.focicipo
+    - taxonomy.vocabulary.foci_cipok
+id: node.focicipo.field_focicipo_marka_modell
+field_name: field_focicipo_marka_modell
+entity_type: node
+bundle: focicipo
+label: 'Focicipő Márka & Modell'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      foci_cipok: foci_cipok
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

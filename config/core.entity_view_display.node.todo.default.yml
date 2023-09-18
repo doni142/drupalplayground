@@ -1,0 +1,28 @@
+uuid: 44227fcc-98d3-43c2-8b60-f1f342bbb7e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.todo.field_alternate_title
+    - node.type.todo
+  module:
+    - user
+id: node.todo.default
+targetEntityType: node
+bundle: todo
+mode: default
+content:
+  field_alternate_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

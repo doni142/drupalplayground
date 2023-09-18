@@ -1,0 +1,19 @@
+uuid: cb1ad263-666d-450c-b322-4c81a6b84e07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternate_todo_title
+    - node.type.todolist
+id: node.todolist.field_alternate_todo_title
+field_name: field_alternate_todo_title
+entity_type: node
+bundle: todolist
+label: 'Alternate todo title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

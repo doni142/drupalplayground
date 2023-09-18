@@ -1,0 +1,20 @@
+uuid: e9a13a07-0e88-43fa-a759-1a7083282cb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - helloworld
+  theme:
+    - olivero
+id: wednesday
+theme: olivero
+region: content_above
+weight: 0
+provider: null
+plugin: helloword_wednesday
+settings:
+  id: helloword_wednesday
+  label: Wednesday
+  label_display: '0'
+  provider: helloworld
+visibility: {  }

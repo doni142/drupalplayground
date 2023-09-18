@@ -1,0 +1,18 @@
+uuid: 25c8421c-5861-4b3e-ac04-f7ad490137cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.todolist
+id: node.todolist.title
+field_name: title
+entity_type: node
+bundle: todolist
+label: TodoListTitle
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

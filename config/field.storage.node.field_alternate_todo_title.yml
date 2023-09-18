@@ -1,0 +1,21 @@
+uuid: 9875b6cb-a76b-490b-91a4-388a071e717a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_alternate_todo_title
+field_name: field_alternate_todo_title
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

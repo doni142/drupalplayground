@@ -1,0 +1,21 @@
+uuid: daa210ec-db23-4730-b3ba-637317cc7766
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extrak
+    - node.type.auto
+  module:
+    - options
+id: node.auto.field_extrak
+field_name: field_extrak
+entity_type: node
+bundle: auto
+label: Extrák
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

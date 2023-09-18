@@ -1,0 +1,29 @@
+uuid: f67be6d4-af39-4539-a6bc-76bd83f72b50
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shoppinglist.field_shoppingdescribtion
+    - node.type.shoppinglist
+  module:
+    - user
+id: node.shoppinglist.teaser
+targetEntityType: node
+bundle: shoppinglist
+mode: teaser
+content:
+  field_shoppingdescribtion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

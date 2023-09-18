@@ -1,0 +1,23 @@
+uuid: 34ee8042-1365-41f4-a48c-30b9a379d915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.focicipo
+  module:
+    - text
+id: node.focicipo.body
+field_name: body
+entity_type: node
+bundle: focicipo
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

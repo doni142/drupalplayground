@@ -1,0 +1,36 @@
+uuid: 0298df76-1bf2-4c51-87d5-25619b341984
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.focicipo.body
+    - field.field.node.focicipo.field_cipoanyag
+    - field.field.node.focicipo.field_cipokiegeszitok
+    - field.field.node.focicipo.field_focicipo_marka_modell
+    - node.type.focicipo
+  module:
+    - text
+    - user
+id: node.focicipo.teaser
+targetEntityType: node
+bundle: focicipo
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cipoanyag: true
+  field_cipokiegeszitok: true
+  field_focicipo_marka_modell: true

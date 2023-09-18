@@ -1,0 +1,29 @@
+uuid: 88be2732-4322-495c-9985-36b011b6c147
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.todolist.field_alternate_todo_title
+    - node.type.todolist
+  module:
+    - user
+id: node.todolist.teaser
+targetEntityType: node
+bundle: todolist
+mode: teaser
+content:
+  field_alternate_todo_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 6efbd582-e43e-447d-98e9-5d2b8d139dd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - helloworld
+  theme:
+    - olivero
+id: sayhello
+theme: olivero
+region: content_above
+weight: 0
+provider: null
+plugin: helloword
+settings:
+  id: helloword
+  label: 'Say Hello'
+  label_display: '0'
+  provider: helloworld
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: 5dbc26e3-39f2-488b-9a97-1e38ce877d5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shoppinglist.field_shoppingdescribtion
+    - node.type.shoppinglist
+  module:
+    - user
+id: node.shoppinglist.default
+targetEntityType: node
+bundle: shoppinglist
+mode: default
+content:
+  field_shoppingdescribtion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
